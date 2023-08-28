@@ -60,7 +60,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family: "FuturaPT", serif;
-    background-image: url("../images/site-bg.png")
+    background-image: url("../images/site-bg.png");
 }
 
 a{
@@ -443,7 +443,7 @@ a{
 /* SERVICES SECTION STARTED */
 
 .services{
-    background: #F9F9F9;
+    background-color: #F9F9F9;
 }
 
 .services-title{
@@ -463,17 +463,10 @@ a{
     justify-content: space-between;
     padding-left: 0;
     list-style-type: none;
-    gap: 13px;
+    /* gap: 13px; */
 }
 
-.services-list::before{
-    display: inline-block;
-    background-image: url("../images/arrow.svg");
-    background-repeat: no-repeat;
-    width: 14px;
-    height: 26px;
-    content: "";
-}
+
 
 .services-list:hover .services-list::before{
     background-color: #fff;
@@ -485,14 +478,7 @@ a{
 }
 
 
-.services-list::after{
-    display: inline-block;
-    background-image: url("../images/arrow2.svg");
-    background-repeat: no-repeat;
-    width: 14px;
-    height: 26px;
-    content: "";
-}
+
 
 .services-item{
     display: inline-block;
@@ -502,7 +488,13 @@ a{
     background: #FFF;
     padding: 35px 32px 42px 35px;
     margin-bottom: 14px;
+    margin-right: 13px;
 }
+
+.services-item:not(:last-child){
+    margin-right: 13px;
+}
+
 .services-item:hover{
     opacity: 0.8;
 }
@@ -562,6 +554,66 @@ a{
 }
 
 .services-item:nth-child(6)::before{
+    display: block;
+    margin: 0 auto;
+    background-image: url("../images/doctor6.svg");
+    width: 76px;
+    height: 77px;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.services-item:nth-child(7)::before{
+    display: block;
+    margin: 0 auto;
+    background-image: url("../images/doctor1.svg");
+    width: 54px;
+    height: 77px;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.services-item:nth-child(8)::before{
+    display: block;
+    margin: 0 auto;
+    background-image: url("../images/doctor2.svg");
+    width: 61px;
+    height: 77px;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.services-item:nth-child(9)::before{
+    display: block;
+    margin: 0 auto;
+    background-image: url("../images/doctor3.svg");
+    width: 72px;
+    height: 77px;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.services-item:nth-child(10)::before{
+    display: block;
+    margin: 0 auto;
+    background-image: url("../images/doctor4.svg");
+    width: 76px;
+    height: 77px;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.services-item:nth-child(11)::before{
+    display: block;
+    margin: 0 auto;
+    background-image: url("../images/doctor5.svg");
+    width: 78px;
+    height: 78px;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.services-item:nth-child(12) ::before{
     display: block;
     margin: 0 auto;
     background-image: url("../images/doctor6.svg");
